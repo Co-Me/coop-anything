@@ -83,7 +83,9 @@ in-game, see QA.
 | Licence of the patch | GPL-3.0-or-later |
 | Stage coverage | Cell → **Creature transition**; Creature gameplay not synchronised |
 
-One commit on top of upstream. The upstream behaviour and the reason it exists:
+One code commit on top of upstream (`6b8f436`), plus a documentation commit
+(`103db8b`) that records the verified patch-boundary compatibility. The upstream
+behaviour and the reason it exists:
 
 > Upstream intercepts the landfall transition, replaces it with the version 1
 > end screen and closes the cooperative session. `native/CellStageEnd.h` holds
@@ -202,9 +204,10 @@ README:
 The toolchain is now on the machine (Visual Studio Build Tools 2022 17.14.42,
 MSVC v143 14.44.35207, Windows SDK 10.0.22621.0, installed to `D:\VSBuildTools`
 after the owner approved it), so the pinned native DLL could be rebuilt from
-source and patched. The result is one commit on top of upstream, published as
-[Co-Me/spore-multiplayer-mod](https://github.com/Co-Me/spore-multiplayer-mod)
-(commit `6b8f436`). Upstream's own `LICENSE` and sources are untouched.
+source and patched. The result is one code commit on top of upstream, published
+as [Co-Me/spore-multiplayer-mod](https://github.com/Co-Me/spore-multiplayer-mod)
+(commit `6b8f436`; `103db8b` adds the verified compatibility note). Upstream's own
+`LICENSE` and sources are untouched.
 
 | File | Change | Why |
 |---|---|---|
